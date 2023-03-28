@@ -1,0 +1,198 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Montserrat';
+}
+
+/* MUDANDO AS CORES TEMA */
+:root, 
+    :root.dark {
+        --bg-color: #131313;
+        --text-color: #EAF2EF;
+    }
+
+    :root.blu {
+        --bg-color: #23395B;
+        /* --text-color: #696047; */
+    }
+
+    :root.pinky {
+        --bg-color: #EF626C;
+    }
+
+.pinky {
+    background-color: #EF626C;
+    border: none;
+}
+.dark {
+    background-color: #131313;
+    border: none;
+}
+.blu {
+    background-color: #23395B;
+    border: none;
+}
+
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    color: #131313;
+}
+::-webkit-scrollbar-thumb {
+    color: #EAF2EF;
+}
+
+/* BARRA DE NAVEGAÇÃO */
+.corBarra {
+    color: transparent;
+    /* border-bottom: 1px solid #EAF2EF; */
+}
+
+.nav-link {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    transition: all .3s;
+}
+.nav-link:hover {
+    color: #EAF2EF;
+    text-shadow: 2px 2px 20px #EAF2EF;
+}
+
+/* PRIMEIRA VISÃO */
+
+.conWelcome {
+    /* border: 1px solid red; */
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+    margin-bottom: 5%;
+}
+#welcome {
+    padding: 2rem;
+    text-align: center;
+    /* margin: 0 auto; */
+    color: var(--text-color);
+}
+
+/* PARTE DAS MÚSICAS */
+.conMusic {
+    /* border: 1px solid yellow; */
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    flex-direction: column;
+    height: 260px;
+}
+
+.musicText {
+    color: var(--text-color);
+    text-align: center;
+}
+
+.conText {
+    /* border: 1px solid green; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    justify-content: center;
+}
+
+.containerBtns {
+    /* border: 1px solid red; */
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    height: 600px;
+    width: 70%;
+
+    margin-top: 3%;
+}
+
+.btnHumor {
+    font-weight: 500;
+    transition: color .5s;
+}
+.btnHumor:hover {
+    background-color: transparent;
+    color: var(--text-color);
+}
+
+.conResultado {
+    /* border: 1px solid red; */
+    background-color: var(--text-color);
+    height: 200px;
+    margin-top: 2%;
+    margin-bottom: 23%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15%;
+
+    border-radius: 5px;
+
+}
+
+#musicResultado {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+/* FRASES/QUOTES */
+.conTextFrases {
+    margin-top: 10%;
+}
+
+#fraseResultado {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-top: 4%;
+}
+
+/* CONSELHOS */
+.conInput {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    /* border: 1px solid red; */
+    gap: 3%;
+}
+
+#meuInput {
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    background-color: var(--text-color);
+    color: #131313;
+    text-indent: 10px;
+    font-size: 1.4rem;
+    height: 60px;
+    width: 70%;
+    margin-top: 3%;
+}
+
+.btnInput {
+    font-weight: 500;
+    height: 60px;
+}
+.btnInput:hover {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+#conselhoResultado {
+    font-weight: 400;
+    font-size: 1.4rem;
+}
